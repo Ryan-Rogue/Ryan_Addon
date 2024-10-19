@@ -1,5 +1,4 @@
 package-as: Ryan_Addon
-enable-toc-creation: yes
 
 ignore:
     - .github
