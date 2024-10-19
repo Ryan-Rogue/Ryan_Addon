@@ -1,0 +1,13 @@
+## Interface: 110002
+## Version: 1.0.0
+## Title: |cff58C6FARyan Addon|r
+## Notes: Just Saving Some Stuff
+## Author: Ryan
+## IconTexture: Interface\Icons\inv_misc_gear_08
+## RequiredDeps: TellMeWhen
+## DefaultState: enabled
+## LoadWith: TellMeWhen
+## SavedVariables: Ryan_Addon
+
+
+Ryan_Addon.lua
