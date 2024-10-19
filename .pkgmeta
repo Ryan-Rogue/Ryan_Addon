@@ -1,0 +1,9 @@
+package-as: RyanAddon
+enable-toc-creation: yes
+
+ignore:
+    - .github
+    - .gitignore
+    - .previews
+    - README.md
+    - AddonManagers.md
