@@ -375,6 +375,10 @@ addon.db = {
             [40166] = true,
             [129996] = true,
             },
+        ["ironWired"] = {
+        },
+        ["ironWiredImmuneFound"] = {
+        },
     },
 }
 
