@@ -8,6 +8,6 @@
 ## DefaultState: enabled
 ## LoadWith: TellMeWhen
 ## SavedVariables: Ryan_Addon
-
+## Group: TellMeWhen
 
 Ryan_Addon.lua
