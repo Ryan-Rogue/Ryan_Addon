@@ -3,6 +3,7 @@ local addonName = ...
 ---@class ns
 local addon = select(2, ...)
 
+
 -- Default settings.
 -----------------------------------------------------------
 addon.db = {
