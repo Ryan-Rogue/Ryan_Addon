@@ -16,6 +16,6 @@ jobs:
               with:
                   fetch-depth: 0
             - name: Package and release
-              uses: BigWigsMods/packager@v2
+              uses: BigWigsMods/packager@master
               with:
                 args: -n {project-version}
