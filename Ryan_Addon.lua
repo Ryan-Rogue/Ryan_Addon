@@ -32,6 +32,16 @@ addon.db = {
         ["knockbackImmuneFound"] = {},
     },
     Shaman = {},
+    DeathKnight = {},
+    DemonHunter = {},
+    Druid = {},
+    Hunter = {},
+    Mage = {},
+    Monk = {},
+    Paladin = {},
+    Priest = {},
+    Warlock = {},
+    Warrior = {}
 }
 
 local type = type
