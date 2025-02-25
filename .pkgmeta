@@ -1,7 +1,0 @@
-ignore:
-    - .github
-    - .gitignore
-    - .previews
-    - README.md
-    - AddonManagers.md
-    
