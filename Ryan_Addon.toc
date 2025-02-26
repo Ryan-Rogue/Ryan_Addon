@@ -1,5 +1,5 @@
-## Interface: 110007
-## Version: 2.2
+## Interface: 110100
+## Version: 2.3
 ## Title: |cff58C6FARyan Addon|r
 ## Notes: Just Saving Some Stuff
 ## Author: Ryan
