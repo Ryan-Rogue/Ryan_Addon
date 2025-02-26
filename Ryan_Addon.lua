@@ -5,10 +5,10 @@ local addon = select(2, ...)
 
 local ADDON_VERSION = 2 -- Increment this when you want to reset defaults
 
+
 -- Default settings.
 -----------------------------------------------------------
-addon.db = {
-    version = ADDON_VERSION,
+local defualt = {
     Evoker = {
         Prescience = {},
     },
@@ -54,29 +54,25 @@ addon.eventFrame:SetScript("OnEvent", function(_, event, ...)
         local name = ...
         if name == addonName then
             addon.eventFrame:UnregisterEvent("ADDON_LOADED") -- Only do it once
-
-            -- Ensure Ryan_Addon table exists
-            if type(Ryan_Addon) ~= "table" then
-                Ryan_Addon = {}
-            end
+            --Create the table
+            if _G[addonName] == nil then _G[addonName] = {{ version = ADDON_VERSION }} end --create the table
 
             -- Check version and reset if outdated
-            if Ryan_Addon.version ~= ADDON_VERSION then
-                Ryan_Addon = { version = ADDON_VERSION } -- Reset the table
+            if _G[addonName].version ~= ADDON_VERSION then
+                _G[addonName] = { version = ADDON_VERSION } -- Reset the table
             end
 
-            local db = Ryan_Addon
+            Ryan_Addon = _G[addonName]
+
             -- Initialize missing sections with defaults
-            for key in pairs(addon.db) do
-                if db[key] == nil then
-                    db[key] = addon.db[key]
+            for key in pairs(defualt) do
+                if Ryan_Addon[key] == nil then
+                    Ryan_Addon[key] = defualt[key]
                 end
             end
         end
     end
 end)
-
-
 
 -----------------------------------------------------------------
 --Accept LFG Queues (I'm lazy and so are my users!)
