@@ -55,7 +55,7 @@ addon.eventFrame:SetScript("OnEvent", function(_, event, ...)
         if name == addonName then
             addon.eventFrame:UnregisterEvent("ADDON_LOADED") -- Only do it once
             --Create the table
-            if _G[addonName] == nil then _G[addonName] = {{ version = ADDON_VERSION }} end --create the table
+            if _G[addonName] == nil then _G[addonName] = { version = ADDON_VERSION } end --create the table
 
             -- Check version and reset if outdated
             if _G[addonName].version ~= ADDON_VERSION then
