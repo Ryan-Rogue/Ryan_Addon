@@ -5,6 +5,8 @@ local addon = select(2, ...)
 
 local ADDON_VERSION = 2 -- Increment this when you want to reset defaults
 
+C_CVar.RegisterCVar("addonProfilerEnabled", "1")
+C_CVar.SetCVar("addonProfilerEnabled", "0")
 
 -- Default settings.
 -----------------------------------------------------------
