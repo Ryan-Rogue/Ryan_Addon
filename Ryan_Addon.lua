@@ -32,6 +32,8 @@ local defualt = {
         ["tauntImmuneFound"] = {},
         ["knockback"] = {},
         ["knockbackImmuneFound"] = {},
+        ["grip"] = {},
+        ["gripImmuneFound"] = {},
     },
     Shaman = {},
     DeathKnight = {},
